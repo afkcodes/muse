@@ -26,10 +26,10 @@ export enum ERROR_CODE {
 }
 
 export class MuseError extends Error {
-  name = "MuseError";
+  name = 'MuseError';
   code: ERROR_CODE;
-  constructor(code: ERROR_CODE, message: string, options?: ErrorOptions) {
-    super(message, options);
+  constructor(code: ERROR_CODE, message: string) {
+    super(message);
     this.code = code;
   }
 }
